@@ -26,10 +26,45 @@
     <Declaration>
         <Class IRI="#Org"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#核心团队成员"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ben7th"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fushang318"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kaid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#menxu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wudi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xiaoarly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yutong"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#CoreTeam"/>
         <Class IRI="#Org"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#核心团队成员"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#核心团队成员"/>
+        <NamedIndividual IRI="#yutong"/>
+    </ClassAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#CoreTeam</IRI>
@@ -39,6 +74,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Org</IRI>
         <Literal xml:lang="zh" datatypeIRI="&rdf;PlainLiteral">组织</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="zh" datatypeIRI="&rdf;PlainLiteral">人员</Literal>
     </AnnotationAssertion>
 </Ontology>
 
